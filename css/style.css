@@ -1,0 +1,98 @@
+.welcome{
+    /* background-color: #9caccc81; */
+    text-align: center;
+  
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    min-height: 100vh;
+    width: 100%;
+    /* background: #009579; */
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='629' preserveAspectRatio='none' viewBox='0 0 1440 629'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3crect width='1440' height='629' x='0' y='0' fill='rgba(211%2c 211%2c 211%2c 1)'%3e%3c/rect%3e%3cpath d='M10 629L639 0L1017 0L388 629z' fill='url(%26quot%3b%23SvgjsLinearGradient1013%26quot%3b)'%3e%3c/path%3e%3cpath d='M546.2 629L1175.2 0L1557.7 0L928.7 629z' fill='url(%26quot%3b%23SvgjsLinearGradient1013%26quot%3b)'%3e%3c/path%3e%3cpath d='M1419 629L790 0L625 0L1254 629z' fill='url(%26quot%3b%23SvgjsLinearGradient1014%26quot%3b)'%3e%3c/path%3e%3cpath d='M897.8 629L268.79999999999995 0L-217.20000000000005 0L411.79999999999995 629z' fill='url(%26quot%3b%23SvgjsLinearGradient1014%26quot%3b)'%3e%3c/path%3e%3cpath d='M937.5693367406958 629L1440 126.5693367406958L1440 629z' fill='url(%26quot%3b%23SvgjsLinearGradient1013%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 629L502.4306632593042 629L 0 126.5693367406958z' fill='url(%26quot%3b%23SvgjsLinearGradient1014%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='629' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1013'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1014'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");;
+  
+  }
+  .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  .form .registration{
+    display: none;
+  }
+  #check:checked ~ .registration{
+    display: block;
+  }
+  #check:checked ~ .login{
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .form .form{
+    padding: 2rem;
+  }
+  .form header{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+   .form input{
+     height: 60px;
+     width: 100%;
+     padding: 0 15px;
+     font-size: 17px;
+     margin-bottom: 1.3rem;
+     border: 1px solid #ddd;
+     border-radius: 6px;
+     outline: none;
+   }
+   .form input:focus{
+     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+   }
+  .form a{
+    font-size: 16px;
+    color: #020095;
+    text-decoration: none;
+  }
+  .form a:hover{
+    text-decoration: underline;
+  }
+  .form input.button{
+    color: #0d0b0b;
+    background: #002395;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .form input.button:hover{
+    background: #bad606;
+  }
+  .signup{
+    font-size: 17px;
+    text-align: center;
+  }
+  .signup label{
+    color: #0d62e1;
+    cursor: pointer;
+  }
+  .signup label:hover{
+    text-decoration: underline;
+  }

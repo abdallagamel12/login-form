@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Login</title>
+    
+</head>
+
+<body>
+
+<!-- welcome page -->
+
+<div class="my d-none  ">
+	
+  <nav class="navbar shadow-sm ">
+  <div class="container">
+    <a class="navbar-brand" href="#">SMART LOGIN</a>
+    <button onclick="logout()" id="logOut" class="btn btn-outline-danger" >Log Out</button>
+  </div>
+  </nav>
+  <div class="container my-dev position-relative ">
+    <div class="welcome rounded-2 p-5 ">
+        <h1 class="hello"></h1>
+    </div>
+  </div>
+</div>
+
+<div  class="form wrapper" >
+   <input type="checkbox" id="check">
+   <div class="login form">
+     <header>Login</header>
+     <form action="#">
+
+
+       <input id="emailIn" type="text" placeholder="Enter your email">
+       <input id="passwordIn" type="password" placeholder="Enter your password">
+      <div class="not2"></div>
+
+       <a href="#">Forgot password?</a>
+
+       <input onclick="signIn()" id="logIn" type="button" class="button" value="Login">
+      
+     </form>
+     <div class="signup">
+       <span class="signup">Don't have an account?
+        <label for="check">Signup</label>
+       </span>
+     </div>
+   </div>
+   <div class="registration form">
+     <header>Signup</header>
+     <form action="#">
+       <input id="nameInput" type="text" placeholder="User Name">
+       <input id="signUpEmail" type="text" placeholder="Enter your email">
+       <input id="passUp" type="password" placeholder="Create a password">
+       <div class="not"></div>
+       <!-- <input type="password" placeholder="Confirm your password"> -->
+       <input onclick="signUp()" id="signUpBtn" type="button" class="button" value="Signup">
+     </form>
+     <div class="signup">
+       <span class="signup">Already have an account?
+        <label for="check">Login</label>
+       </span>
+     </div>
+   </div>
+ </div>
+
+
+	
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+
+</html>
